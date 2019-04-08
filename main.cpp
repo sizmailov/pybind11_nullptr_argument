@@ -10,5 +10,5 @@ PYBIND11_MODULE(dev_pybind, m)
   py::class_<Foo> (m,"Foo");
   using T = std::vector<Foo>;
 //  py::class_<T> (m,"T");
-  m.def("func", [](T* x) { }, py::arg("x") = static_cast<T*>(nullptr));
+  m.def("func", [](T* x) { }, py::arg("x").none(true) = static_cast<T*>(nullptr));
 }
