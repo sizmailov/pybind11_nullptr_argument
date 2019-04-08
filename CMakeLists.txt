@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(pybind11_nullptr_as_default_argument)
+project(pybind11_nullptr_argument)
 
 set(CMAKE_CXX_STANDARD 11)
 
